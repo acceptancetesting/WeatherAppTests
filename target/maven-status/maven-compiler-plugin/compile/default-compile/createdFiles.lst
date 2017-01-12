@@ -1,0 +1,17 @@
+responseMapper/Weather.class
+responseMapper/Example.class
+responseMapper/Rain.class
+responseMapper/Sys_.class
+responseMapper/Coord.class
+pageObjects/WeatherAppIndexPage.class
+responseMapper/Main.class
+responseMapper/SummaryDetails.class
+responseMapper/Sys.class
+responseMapper/HourlyDetailGenerator.class
+responseMapper/HourlyDetails.class
+responseMapper/JsonResponse.class
+responseMapper/City.class
+responseMapper/Wind.class
+responseMapper/List.class
+responseMapper/SummaryGenerator.class
+responseMapper/Clouds.class
