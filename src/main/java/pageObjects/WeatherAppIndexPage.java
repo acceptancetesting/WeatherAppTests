@@ -17,19 +17,18 @@ import com.google.common.base.Predicate;
 public class WeatherAppIndexPage {
 
 	    WebDriver driver;
-	    By titleText =By.className("barone");
 	    
 	    public WeatherAppIndexPage(WebDriver driver){ 			//Constructor
 	        this.driver = driver;
 	    }
 	    
 	    
-	    public void waitForLoad() {
+	    public void waitForLoad() { 							//Load for page to load completely
 	        new WebDriverWait(this.driver, 30).until((ExpectedCondition<Boolean>) wd -> ((JavascriptExecutor) wd).executeScript("return document.readyState").equals("complete"));
 	    }
 	    	
 	    
-	    public boolean loadWeatherApp() {
+	    public boolean loadWeatherApp() {						//Load config files and load we app in chrome browser
 	    	Properties prop = new Properties();
 	    	InputStream input = null;
 	    	try {

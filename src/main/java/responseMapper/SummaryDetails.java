@@ -1,6 +1,6 @@
 package responseMapper;
 
-public class SummaryDetails {
+public class SummaryDetails {		//Class for daily summary details
 	String day;
 	String date;
 	String weather;

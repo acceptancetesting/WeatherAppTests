@@ -11,9 +11,9 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class HourlyDetailGenerator {
+public class HourlyDetailGenerator {	//Create object with hourly class
 	public static ArrayList<HourlyDetails> citySummary(Example ex){
-		ArrayList<HourlyDetails> dateSummaryList = new ArrayList();
+		ArrayList<HourlyDetails> dateSummaryList = new ArrayList();	//Hourly list with all details for that hour
 		java.util.List<List> allList = ex.getList();
 		java.util.List<String> dates = new ArrayList();
 		java.util.List<String> dateandtime = new ArrayList();
@@ -25,19 +25,14 @@ public class HourlyDetailGenerator {
 			dateandtime.add(elements.getDtTxt());
 		}
 		
-		Set<String> uniqueDates = new HashSet<>();
-		uniqueDates.addAll(dates);
-		dates.clear();
-		dates.addAll(uniqueDates);
-		
-		for (String daySummary : dateandtime) {
+		for (String daySummary : dateandtime) {						//Iterate through all dates and add to return list		
 			HourlyDetails summary = new HourlyDetails();
-			
 			if (daySummary.equals(allList.get(counter).getDtTxt())) {
-					summary.setDay(allList.get(counter).getDtTxt().substring(0, 10));
-					summary.setHour(allList.get(counter).getDtTxt().substring(11,16));
-					summary.setMaxTemp(allList.get(counter).getMain().getTempMax());
+					summary.setDay(allList.get(counter).getDtTxt().substring(0, 10));		//Get just date
+					summary.setHour(allList.get(counter).getDtTxt().substring(11,16));		//Get just time
+					summary.setMaxTemp(allList.get(counter).getMain().getTempMax());			
 					summary.setMinTemp(allList.get(counter).getMain().getTempMin());	
+					//TODO : Pending set all elements
 				}
 			counter = counter + 1;
 			dateSummaryList.add(summary);

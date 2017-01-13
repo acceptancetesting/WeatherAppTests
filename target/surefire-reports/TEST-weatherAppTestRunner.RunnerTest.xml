@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="weatherAppTestRunner.RunnerTest" time="0.095" errors="0" skipped="0">
+<testsuite tests="89" failures="2" name="weatherAppTestRunner.RunnerTest" time="1.256" errors="0" skipped="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib"/>
@@ -26,7 +26,7 @@
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/avneesh/Documents/workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf6415057361355940700.tmp"/>
+    <property name="classworlds.conf" value="/Users/avneesh/Documents/workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf7094078987089127439.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/avneesh/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -62,9 +62,111 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="Given weather app is available(Scenario: Get 3 hourly weather forecast details (All days 8 rows, Except Day 1))" name="Given weather app is available(Scenario: Get 3 hourly weather forecast details " time="0.011"/>
+  <testcase classname="| day |" name="Given weather app is available" time="0.01"/>
+  <testcase classname="| day |" name="Given I request weather forecast for Glasgow" time="0"/>
+  <testcase classname="| day |" name="When I submit the request" time="0"/>
+  <testcase classname="| day |" name="Then I should get forecast for next 1 days" time="0"/>
+  <testcase classname="| day |" name="And each days forecast should have day" time="0"/>
+  <testcase classname="| day |" name="| day |" time="0.085"/>
+  <testcase classname="| date |" name="Given weather app is available" time="0"/>
+  <testcase classname="| date |" name="Given I request weather forecast for Glasgow" time="0"/>
+  <testcase classname="| date |" name="When I submit the request" time="0.001"/>
+  <testcase classname="| date |" name="Then I should get forecast for next 1 days" time="0"/>
+  <testcase classname="| date |" name="And each days forecast should have date" time="0"/>
+  <testcase classname="| date |" name="| date |" time="0.075"/>
+  <testcase classname="| description |" name="Given weather app is available" time="0"/>
+  <testcase classname="| description |" name="Given I request weather forecast for Glasgow" time="0"/>
+  <testcase classname="| description |" name="When I submit the request" time="0"/>
+  <testcase classname="| description |" name="Then I should get forecast for next 1 days" time="0"/>
+  <testcase classname="| description |" name="And each days forecast should have description" time="0"/>
+  <testcase classname="| description |" name="| description |" time="0.08"/>
+  <testcase classname="| maximum |" name="Given weather app is available" time="0"/>
+  <testcase classname="| maximum |" name="Given I request weather forecast for Glasgow" time="0"/>
+  <testcase classname="| maximum |" name="When I submit the request" time="0"/>
+  <testcase classname="| maximum |" name="Then I should get forecast for next 1 days" time="0"/>
+  <testcase classname="| maximum |" name="And each days forecast should have maximum" time="0"/>
+  <testcase classname="| maximum |" name="| maximum |" time="0.076"/>
+  <testcase classname="| minimum |" name="Given weather app is available" time="0.001"/>
+  <testcase classname="| minimum |" name="Given I request weather forecast for Glasgow" time="0"/>
+  <testcase classname="| minimum |" name="When I submit the request" time="0"/>
+  <testcase classname="| minimum |" name="Then I should get forecast for next 1 days" time="0"/>
+  <testcase classname="| minimum |" name="And each days forecast should have minimum" time="0"/>
+  <testcase classname="| minimum |" name="| minimum |" time="0.076"/>
+  <testcase classname="| speed |" name="Given weather app is available" time="0"/>
+  <testcase classname="| speed |" name="Given I request weather forecast for Glasgow" time="0"/>
+  <testcase classname="| speed |" name="When I submit the request" time="0"/>
+  <testcase classname="| speed |" name="Then I should get forecast for next 1 days" time="0"/>
+  <testcase classname="| speed |" name="And each days forecast should have speed" time="0"/>
+  <testcase classname="| speed |" name="| speed |" time="0.073"/>
+  <testcase classname="| direction |" name="Given weather app is available" time="0"/>
+  <testcase classname="| direction |" name="Given I request weather forecast for Glasgow" time="0"/>
+  <testcase classname="| direction |" name="When I submit the request" time="0"/>
+  <testcase classname="| direction |" name="Then I should get forecast for next 1 days" time="0"/>
+  <testcase classname="| direction |" name="And each days forecast should have direction" time="0"/>
+  <testcase classname="| direction |" name="| direction |" time="0.079"/>
+  <testcase classname="| rainfall |" name="Given weather app is available" time="0"/>
+  <testcase classname="| rainfall |" name="Given I request weather forecast for Glasgow" time="0"/>
+  <testcase classname="| rainfall |" name="When I submit the request" time="0"/>
+  <testcase classname="| rainfall |" name="Then I should get forecast for next 1 days" time="0"/>
+  <testcase classname="| rainfall |" name="And each days forecast should have rainfall" time="0"/>
+  <testcase classname="| rainfall |" name="| rainfall |" time="0.08"/>
+  <testcase classname="| pressure |" name="Given weather app is available" time="0"/>
+  <testcase classname="| pressure |" name="Given I request weather forecast for Glasgow" time="0"/>
+  <testcase classname="| pressure |" name="When I submit the request" time="0"/>
+  <testcase classname="| pressure |" name="Then I should get forecast for next 1 days" time="0"/>
+  <testcase classname="| pressure |" name="And each days forecast should have pressure" time="0"/>
+  <testcase classname="| pressure |" name="| pressure |" time="0.074"/>
+  <testcase classname="| Aberdeen | 5 |" name="Given weather app is available" time="0"/>
+  <testcase classname="| Aberdeen | 5 |" name="Given I request weather forecast for Aberdeen" time="0"/>
+  <testcase classname="| Aberdeen | 5 |" name="When I submit the request" time="0.001"/>
+  <testcase classname="| Aberdeen | 5 |" name="Then I should get forecast for next 5 days" time="0"/>
+  <testcase classname="| Aberdeen | 5 |" name="| Aberdeen | 5 |" time="0.079"/>
+  <testcase classname="| Dundee | 5 |" name="Given weather app is available" time="0"/>
+  <testcase classname="| Dundee | 5 |" name="Given I request weather forecast for Dundee" time="0"/>
+  <testcase classname="| Dundee | 5 |" name="When I submit the request" time="0"/>
+  <testcase classname="| Dundee | 5 |" name="Then I should get forecast for next 5 days" time="0"/>
+  <testcase classname="| Dundee | 5 |" name="| Dundee | 5 |" time="0.075"/>
+  <testcase classname="| Edinburgh | 5 |" name="Given weather app is available" time="0"/>
+  <testcase classname="| Edinburgh | 5 |" name="Given I request weather forecast for Edinburgh" time="0"/>
+  <testcase classname="| Edinburgh | 5 |" name="When I submit the request" time="0"/>
+  <testcase classname="| Edinburgh | 5 |" name="Then I should get forecast for next 5 days" time="0"/>
+  <testcase classname="| Edinburgh | 5 |" name="| Edinburgh | 5 |" time="0.095"/>
+  <testcase classname="| Glasgow | 5 |" name="Given weather app is available" time="0"/>
+  <testcase classname="| Glasgow | 5 |" name="Given I request weather forecast for Glasgow" time="0"/>
+  <testcase classname="| Glasgow | 5 |" name="When I submit the request" time="0"/>
+  <testcase classname="| Glasgow | 5 |" name="Then I should get forecast for next 5 days" time="0"/>
+  <testcase classname="| Glasgow | 5 |" name="| Glasgow | 5 |" time="0.079"/>
+  <testcase classname="| Perth | 5 |" name="Given weather app is available" time="0"/>
+  <testcase classname="| Perth | 5 |" name="Given I request weather forecast for Perth" time="0"/>
+  <testcase classname="| Perth | 5 |" name="When I submit the request" time="0"/>
+  <testcase classname="| Perth | 5 |" name="Then I should get forecast for next 5 days" time="0"/>
+  <testcase classname="| Perth | 5 |" name="| Perth | 5 |" time="0.075"/>
+  <testcase classname="| Stirling | 5 |" name="Given weather app is available" time="0"/>
+  <testcase classname="| Stirling | 5 |" name="Given I request weather forecast for Stirling" time="0"/>
+  <testcase classname="| Stirling | 5 |" name="When I submit the request" time="0"/>
+  <testcase classname="| Stirling | 5 |" name="Then I should get forecast for next 5 days" time="0"/>
+  <testcase classname="| Stirling | 5 |" name="| Stirling | 5 |" time="0.078"/>
+  <testcase classname="Given weather app is available(Scenario: Get 3 hourly weather forecast details (All days 8 rows, Except Day 1))" name="Given weather app is available(Scenario: Get 3 hourly weather forecast details " time="0"/>
   <testcase classname="Given I request weather forecast for Glasgow(Scenario: Get 3 hourly weather forecast details (All days 8 rows, Except Day 1))" name="Given I request weather forecast for Glasgow(Scenario: Get 3 hourly weather forecast details " time="0"/>
-  <testcase classname="When I click and expand the day summary(Scenario: Get 3 hourly weather forecast details (All days 8 rows, Except Day 1))" name="When I click and expand the day summary(Scenario: Get 3 hourly weather forecast details " time="0"/>
-  <testcase classname="Then correct three hourly details should be displayed for as in app response(Scenario: Get 3 hourly weather forecast details (All days 8 rows, Except Day 1))" name="Then correct three hourly details should be displayed for as in app response(Scenario: Get 3 hourly weather forecast details " time="0"/>
-  <testcase classname="All days 8 rows, Except Day 1" name="Scenario: Get 3 hourly weather forecast details " time="0.084"/>
+  <testcase classname="When I click and expand the day summary(Scenario: Get 3 hourly weather forecast details (All days 8 rows, Except Day 1))" name="When I click and expand the day summary(Scenario: Get 3 hourly weather forecast details " time="0.02">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at weatherAppTestRunner.Steps.i_click_and_expand_the_day_summary(Steps.java:83)
+	at ✽.When I click and expand the day summary(happyPathScenarios.feature:48)
+</failure>
+  </testcase>
+  <testcase classname="All days 8 rows, Except Day 1" name="Scenario: Get 3 hourly weather forecast details " time="0.022">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at weatherAppTestRunner.Steps.i_click_and_expand_the_day_summary(Steps.java:83)
+	at ✽.When I click and expand the day summary(happyPathScenarios.feature:48)
+</failure>
+  </testcase>
+  <testcase classname="Then correct three hourly details should be displayed for as in app response(Scenario: Get 3 hourly weather forecast details (All days 8 rows, Except Day 1))" name="Then correct three hourly details should be displayed for as in app response(Scenario: Get 3 hourly weather forecast details " time="0.022">
+    <skipped/>
+  </testcase>
 </testsuite>

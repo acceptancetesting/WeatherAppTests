@@ -8,9 +8,10 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 
 
-public class JsonResponse {
+public class JsonResponse {								//Read test data and map to java object
+	/* Code commented as only required for debugging/dev test
 	public static void main(String args[]){
-		ObjectMapper objectmapper = new ObjectMapper(); // can reuse, share globally
+		ObjectMapper objectmapper = new ObjectMapper(); 
 		String filePath = new File("").getAbsolutePath();
 		System.out.println(filePath);
 		File file = new File(filePath+"/src/test/java/WeatherAppTestData/"+"aberdeen.json");
@@ -26,7 +27,7 @@ public class JsonResponse {
 	      catch (JsonMappingException e2) { e2.printStackTrace(); }
 	      catch (IOException e3) { e3.printStackTrace(); }
 	   }
-	
+	*/
 	
 	public static Example getJsonResponse(String cityName){
 		ObjectMapper objectmapper = new ObjectMapper(); // can reuse, share globally

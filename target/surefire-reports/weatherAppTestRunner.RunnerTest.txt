@@ -1,4 +1,20 @@
 -------------------------------------------------------------------------------
 Test set: weatherAppTestRunner.RunnerTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.861 sec
+Tests run: 89, Failures: 2, Errors: 0, Skipped: 1, Time elapsed: 66.284 sec <<< FAILURE!
+When I click and expand the day summary(Scenario: Get 3 hourly weather forecast details (All days 8 rows, Except Day 1))  Time elapsed: 0.02 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at weatherAppTestRunner.Steps.i_click_and_expand_the_day_summary(Steps.java:83)
+	at ✽.When I click and expand the day summary(happyPathScenarios.feature:48)
+
+Scenario: Get 3 hourly weather forecast details (All days 8 rows, Except Day 1)  Time elapsed: 0.022 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at weatherAppTestRunner.Steps.i_click_and_expand_the_day_summary(Steps.java:83)
+	at ✽.When I click and expand the day summary(happyPathScenarios.feature:48)
+

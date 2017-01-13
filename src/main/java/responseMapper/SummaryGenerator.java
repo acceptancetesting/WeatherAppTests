@@ -10,25 +10,25 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class SummaryGenerator {
-	public static ArrayList<SummaryDetails> citySummary(Example ex){
+public class SummaryGenerator {			//
+	public static ArrayList<SummaryDetails> citySummary(Example ex){		//Function to generate daily summary details
 		ArrayList<SummaryDetails> dateSummaryList = new ArrayList();
 		java.util.List<List> allList = ex.getList();
 		java.util.List<String> dates = new ArrayList();
 		java.util.List<String> dateandtime = new ArrayList();
 		for (List elements : allList) {
-			dates.add(elements.getDtTxt().substring(0,10));
-			dateandtime.add(elements.getDtTxt());
+			dates.add(elements.getDtTxt().substring(0,10));		//Create date only list
+			dateandtime.add(elements.getDtTxt());				//Create date with 3 hour time list
 		}
 		
-		Set<String> uniqueDates = new HashSet<>();
+		Set<String> uniqueDates = new HashSet<>();			//Get Unique dates 
 		uniqueDates.addAll(dates);
 		dates.clear();
 		dates.addAll(uniqueDates);
 		
 		//System.out.println(dates.toString());
 		
-		for (String daySummary : dates) {
+		for (String daySummary : dates) {					//Iterate through dates to create summary rows
 			SummaryDetails summary = new SummaryDetails();
 			for (List elements : allList) {
 				if (daySummary.equals(elements.getDtTxt().substring(0, 10))) {

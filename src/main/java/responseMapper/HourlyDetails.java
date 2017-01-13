@@ -1,6 +1,6 @@
 package responseMapper;
 
-public class HourlyDetails {
+public class HourlyDetails {		//JSON request hourly details 
 	String day;
 	String hour;
 	Double maxTemp;
